@@ -3,6 +3,7 @@
 #https://www.youtube.com/watch?v=dam0GPOAvVI&ab_channel=TechWithTim
 #https://github.com/techwithtim/Flask-Web-App-Tutorial
 
+
 #For the pages and functionality in the levels and exercises pages, I did not follow any tutorials 
 #but searched for various information on implementing select features
 
