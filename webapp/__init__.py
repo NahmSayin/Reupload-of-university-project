@@ -32,6 +32,7 @@ def initialise_app():
 
     #this function is called to check whether
     #it is neccesary to create a new database
+    #if there is no database it will create one
     initialise_database(app)
     
     #redirects user to sign in page if they click on homepage
