@@ -1,0 +1,27 @@
+<!--The extension of base.html template for the L1question6-->
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+<!--The image for the reading comprehnsion exercise-->
+{% block subject %}
+<h1 class="text-center">L1</h1>
+<h2 class="text-center">Question 6</h2>
+<div class="text-center">
+    <img src="{{url_for('static', filename='letter.png')}}"/>
+</div>
+
+<!--The question-->
+<div class="text-center">
+    <h3>What year did she complete her baking course?</h3>
+</div>
+
+<!--The answer checkboxes with the answers as labels-->
+<form class="text-center" method = "POST" action="/home/L1/question6">
+    <label>a) 2019 <input type="checkbox" value="a" name="checkbox"></label>
+    <label>b) 2017 <input type="checkbox" value="b" name="checkbox"></label>
+    <label>c) 2020 <input type="checkbox" value="c" name="checkbox"></label>
+    <label>d) 2021 <input type="checkbox" value="d" name="checkbox"></label>
+    <input type="submit">
+</form>
+
+
+{% endblock %}

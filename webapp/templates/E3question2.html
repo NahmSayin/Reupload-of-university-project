@@ -1,0 +1,27 @@
+<!--The extension of base.html template for the E3question2-->
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+<!--The image for the reading comprehnsion exercise-->
+{% block subject %}
+<h1 class="text-center">E3</h1>
+<h2 class="text-center">Question 2</h2>
+<div class="text-center">
+    <img src="{{url_for('static', filename='postcard.png')}}"
+    width="550"
+    height="400"/>
+</div>
+
+<!--The question-->
+<div class="text-center">
+    <h3>It was very hot whilst they waited for the bus</h3>
+</div>
+
+<!--The answer checkboxes with the answers as labels-->
+<form class="text-center" method = "POST" action="/home/E3/question2">
+    <label>True<input type="checkbox" value="True" name="checkbox"></label>
+    <label>False<input type="checkbox" value="False" name="checkbox"></label>
+    <input type="submit">
+</form>
+
+{% endblock %}
+
